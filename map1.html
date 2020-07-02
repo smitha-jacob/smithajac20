@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+</div><br />
+  </head>
+  <body>
+  <iframe src="https://calendar.google.com/calendar/embed?src=smitha.jacob%40sjcetpalai.ac.in&ctz=Asia%2FKolkata" style="border: 0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+   <div style="width: 90%"><iframe width="100%" height="400" src="https://maps.google.com/maps?width=90%&height=400&hl=en&coord=10.8505159,76.2710833&q=Pala%2CKottayam+(SMITHA%20JAC)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/measure-map-radius/">Map radius measure</a></iframe></div><br />
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    
+  </body>
+</html>
